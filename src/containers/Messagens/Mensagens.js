@@ -90,28 +90,31 @@ export default function Mensagens() {
 
   const handleDelete = async () => {
     if (deleteID) {
-      const response = await deleteItem(deleteID);
-      setDeleteId("");
-      if (response.status === 200) {
+      const confirmDelete = await Swal.fire({
+        title: "Confirma a que deseja deletar?",
+        showDenyButton: true,
+        showCancelButton: false,
+        confirmButtonText: "Confirmo",
+        denyButtonText: `Cancelar`,
+      });
+      if (confirmDelete.isConfirmed) {
+        const response = await deleteItem(deleteID);
         Swal.fire({
           icon: "success",
           text: "Mensagem Deletada com Sucesso",
           showConfirmButton: false,
           timer: 1500,
         });
-        return;
-      } else {
+      } else if (confirmDelete.isDenied) {
         Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Algo deu errado tente novamente",
+          icon: "info",
+          text: "Mensagem não deletada",
           showConfirmButton: false,
-          timer: 3000,
+          timer: 1500,
         });
-        return;
       }
+      setDeleteId("");
     }
-    return;
   };
 
   const handleSearch = async () => {
@@ -128,6 +131,7 @@ export default function Mensagens() {
         };
       }),
     });
+
     setTextField([]);
   };
 
