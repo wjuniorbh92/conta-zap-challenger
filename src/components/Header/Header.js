@@ -39,7 +39,7 @@ const Header = props => {
           noWrap
           className={classes.title}
         >
-          Zap System
+          Zap Systems
         </Typography>
       </Toolbar>
     </AppBar>

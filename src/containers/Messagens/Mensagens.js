@@ -98,7 +98,7 @@ export default function Mensagens() {
         denyButtonText: `Cancelar`,
       });
       if (confirmDelete.isConfirmed) {
-        const response = await deleteItem(deleteID);
+        await deleteItem(deleteID);
         Swal.fire({
           icon: "success",
           text: "Mensagem Deletada com Sucesso",

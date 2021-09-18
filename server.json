@@ -1,18 +1,25 @@
 {
   "messages": [
     {
-      "id": "7623972e-2e7c-4090-a2bc-54d9c9ea885b",
-      "channel": "recarregou_celular",
-      "trigger": "whatsapp",
-      "timer": "12:32",
-      "message": " 5:00"
-    },
-    {
       "id": "65316d34-59d8-40e4-ae3e-1d0216bcf4c6",
       "channel": "deletou_chave_pix",
       "trigger": "whatsapp",
       "timer": "22:22",
       "message": "222332323 231 21312 1231"
+    },
+    {
+      "id": "10de2b0e-fa4c-4d0e-9990-e1038a38ddbc",
+      "channel": "alterou_dados_pessois",
+      "trigger": "whatsapp",
+      "timer": "14:00",
+      "message": "Teste opa kkk reresd ewes ds"
+    },
+    {
+      "id": "5940872f-00d0-44ad-b79a-fdf244ac7413",
+      "channel": "alterou_dados_pessois",
+      "trigger": "whatsapp",
+      "timer": "14:00",
+      "message": "Editar você não quer né?"
     }
   ],
   "channels": [
