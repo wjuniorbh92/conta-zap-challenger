@@ -1,0 +1,98 @@
+{
+  "messages": [
+    {
+      "id": "c5c55859-d3c0-4187-994e-b110d74e5f25",
+      "channel": "recarregou_celular",
+      "trigger": "sms",
+      "timer": "14:00",
+      "message": "Teste"
+    },
+    {
+      "id": "daa24fc3-f889-4e66-ba3c-4956c4ebbb47",
+      "channel": "consultou_saldo",
+      "trigger": "sms",
+      "timer": "58:00",
+      "message": "Mensagem Legal"
+    },
+    {
+      "id": "1a8073f8-b27f-41b8-a182-1e13693a6629",
+      "channel": "recarregou_celular",
+      "trigger": "sms",
+      "timer": "14:00",
+      "message": "Mais facil que escola amorinha"
+    },
+    {
+      "id": "213e741c-5ed1-4068-bb3e-2f3399a5fdd8",
+      "channel": "criou_chave_pix",
+      "trigger": "whatsapp",
+      "timer": "85:00",
+      "message": "Teste s"
+    },
+    {
+      "id": "8cb5009d-cf74-4672-a6dd-94065da0f7f2",
+      "channel": "fex_transferencia_outro_banco",
+      "trigger": "email",
+      "timer": "23:32",
+      "message": "Banco de dados top"
+    },
+    {
+      "id": "90e87b6c-757a-419e-b1f7-352a7614f502",
+      "channel": "deletou_chave_pix",
+      "trigger": "whatsapp",
+      "timer": "80:00",
+      "message": "Lets Go!"
+    }
+  ],
+  "channels": [
+    {
+      "id": 111,
+      "name": "email"
+    },
+    {
+      "id": 222,
+      "name": "whatsapp"
+    },
+    {
+      "id": 333,
+      "name": "sms"
+    }
+  ],
+  "triggers": [
+    {
+      "id": 1,
+      "name": "abertura_conta"
+    },
+    {
+      "id": 2,
+      "name": "fez_pix"
+    },
+    {
+      "id": 3,
+      "name": "recarregou_celular"
+    },
+    {
+      "id": 4,
+      "name": "alterou_dados_pessois"
+    },
+    {
+      "id": 5,
+      "name": "consultou_saldo"
+    },
+    {
+      "id": 6,
+      "name": "fex_transferencia_outro_banco"
+    },
+    {
+      "id": 7,
+      "name": "deletou_chave_pix"
+    },
+    {
+      "id": 8,
+      "name": "criou_chave_pix"
+    },
+    {
+      "id": 9,
+      "name": "falou_com_atendimento"
+    }
+  ]
+}
