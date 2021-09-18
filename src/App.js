@@ -12,7 +12,7 @@ import Home from "./containers/Dashboard/Dashboard";
 import Setting from "./containers/Setting/Setting";
 import MainLayout from "./layouts/MainLayout";
 import EmptyLayout from "./layouts/EmptyLayout";
-import { getTheme } from "./containers/Setting/settingsReducer";
+import { getTheme } from "./store/reducers/settingsReducer";
 import Mensagens from "./containers/Messagens/Mensagens";
 
 const NotFound = () => {

@@ -10,8 +10,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Switch from "@material-ui/core/Switch";
 import PaletteIcon from "@material-ui/icons/Palette";
 import { useSelector, useDispatch } from 'react-redux';
-
-import { toggleThemeMode,  isDarkMode,  } from "./settingsReducer";
+import { toggleThemeMode,  isDarkMode,  } from "../../store/reducers/settingsReducer";
 
 export default function Setting() {
 

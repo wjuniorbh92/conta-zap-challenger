@@ -1,13 +1,6 @@
 {
   "messages": [
     {
-      "id": "c5c55859-d3c0-4187-994e-b110d74e5f25",
-      "channel": "recarregou_celular",
-      "trigger": "sms",
-      "timer": "14:00",
-      "message": "Teste"
-    },
-    {
       "id": "daa24fc3-f889-4e66-ba3c-4956c4ebbb47",
       "channel": "consultou_saldo",
       "trigger": "sms",
@@ -22,25 +15,11 @@
       "message": "Mais facil que escola amorinha"
     },
     {
-      "id": "213e741c-5ed1-4068-bb3e-2f3399a5fdd8",
-      "channel": "criou_chave_pix",
-      "trigger": "whatsapp",
-      "timer": "85:00",
-      "message": "Teste s"
-    },
-    {
       "id": "8cb5009d-cf74-4672-a6dd-94065da0f7f2",
       "channel": "fex_transferencia_outro_banco",
       "trigger": "email",
       "timer": "23:32",
       "message": "Banco de dados top"
-    },
-    {
-      "id": "90e87b6c-757a-419e-b1f7-352a7614f502",
-      "channel": "deletou_chave_pix",
-      "trigger": "whatsapp",
-      "timer": "80:00",
-      "message": "Lets Go!"
     }
   ],
   "channels": [

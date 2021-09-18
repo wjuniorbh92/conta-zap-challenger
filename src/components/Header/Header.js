@@ -15,7 +15,8 @@ const styles = theme => ({
     marginRight: 36
   },
   title: {
-    flexGrow: 1
+    flexGrow: 1,
+    textAlign:'center',
   }
 });
 

@@ -7,6 +7,7 @@ import LineChart from "../../components/LineChart/LineChart";
 import BarChart from "../../components/BarChart/BarChart";
 import { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/styles";
+import Swal from "sweetalert2";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,14 +32,20 @@ export default function Home() {
     const fetchData = async () => {
       try {
         const response = await api.get("/triggers");
-
         const dataFormatted = response.data.map((item) => {
           return [item.name];
         });
 
-        console.log(dataFormatted);
         setData(dataFormatted);
-      } catch (error) {}
+      } catch (error) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Erro de conexão com o server",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
     };
 
     fetchData();

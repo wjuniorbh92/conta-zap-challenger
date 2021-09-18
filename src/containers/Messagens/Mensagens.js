@@ -47,9 +47,9 @@ const useStyles = makeStyles((theme) => ({
   textInput: {
     margin: theme.spacing(1, 1, 1, 1),
   },
-  iconButton :{
-    alignContent:'center'
-  }
+  iconButton: {
+    alignContent: "center",
+  },
 }));
 
 export default function Mensagens() {
@@ -77,7 +77,7 @@ export default function Mensagens() {
           title: "Oops...",
           text: "Erro de conexão com o server",
           showConfirmButton: false,
-          timer: 3000,
+          timer: 1500,
         });
       }
     };
@@ -89,26 +89,29 @@ export default function Mensagens() {
   };
 
   const handleDelete = async () => {
-    const response = await deleteItem(deleteID);
-    setDeleteId("");
-    if (response.status === 200) {
-      Swal.fire({
-        icon: "success",
-        text: "Mensagem Deletada com Sucesso",
-        showConfirmButton: false,
-        timer: 3000,
-      });
-      return;
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Algo deu errado tente novamente",
-        showConfirmButton: false,
-        timer: 3000,
-      });
-      return;
+    if (deleteID) {
+      const response = await deleteItem(deleteID);
+      setDeleteId("");
+      if (response.status === 200) {
+        Swal.fire({
+          icon: "success",
+          text: "Mensagem Deletada com Sucesso",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        return;
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Algo deu errado tente novamente",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+        return;
+      }
     }
+    return;
   };
 
   const handleSearch = async () => {
@@ -214,7 +217,7 @@ export default function Mensagens() {
 
         <CardContent>
           <Paper className={classes.root}>
-            <TableContainer component={Paper} >
+            <TableContainer component={Paper}>
               <Table size="small" aria-label="a dense table">
                 <TableHead>
                   <TableRow head>
