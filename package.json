@@ -2,6 +2,8 @@
   "name": "conta-zap-desafio",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001",
+
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
@@ -27,9 +29,8 @@
     "web-vitals": "^1.0.1",
     "yup": "^0.32.9"
   },
-  "proxy": "http://localhost:3001",
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"json-server server.json -p 3001 -w\"",
+    "start": "concurrently \"react-scripts start\" \"json-server --watch src/db/db.json --port 3001\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
